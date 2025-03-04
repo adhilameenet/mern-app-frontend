@@ -7,7 +7,7 @@ const App = () => {
     const [tasks, setTasks] = useState([]);
 
     const fetchTasks = async () => {
-        const res = await axios.get("http://localhost:5000/api/tasks");
+        const res = await axios.get("https://task-manager-f5dx.onrender.com/api/tasks");
         setTasks(res.data);
     };
 
